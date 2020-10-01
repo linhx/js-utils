@@ -1,0 +1,29 @@
+{
+  "name": "js-utils",
+  "version": "1.0.0",
+  "description": "",
+  "dependencies": {
+    "eslint": "^7.10.0"
+  },
+  "devDependencies": {
+    "@babel/plugin-transform-modules-commonjs": "^7.10.4",
+    "babel-eslint": "^10.1.0",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "jest": "^26.4.2"
+  },
+  "scripts": {
+    "lint": "eslint --ext .js src",
+    "lintfix": "eslint --ext .js src --fix",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/linhx/js-utils.git"
+  },
+  "author": "linhx",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/linhx/js-utils/issues"
+  },
+  "homepage": "https://github.com/linhx/js-utils#readme"
+}
