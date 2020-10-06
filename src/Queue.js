@@ -10,18 +10,22 @@ class Queue {
     this.jobs.push(job);
   }
   async run () {
-    if (!length(this.jobs)) {
-      this.isRunning = false;
+    if (this.isRunning) {
       return;
     }
-    if (this.isRunning) {
+    if (!length(this.jobs)) {
       return;
     }
     this.isRunning = true;
     const job = this.jobs.shift();
     await job.apply();
     this.isRunning = false;
-    this.run();
+    this.start();
+  }
+
+  async exec (job: () => any) {
+    this.push(job);
+    await this.run();
   }
 }
 
