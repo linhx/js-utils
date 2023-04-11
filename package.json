@@ -1,18 +1,14 @@
 {
-  "name": "@linhx/rest-common",
-  "version": "0.0.4",
+  "name": "@linhx/utils",
+  "version": "0.0.1",
   "description": "",
   "main": "lib/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsc"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "typescript": "^4.7.4"
-  },
-  "dependencies": {
-    "class-validator": "^0.14.0"
   }
 }
